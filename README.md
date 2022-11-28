@@ -1,6 +1,6 @@
-# Filfi
+# Filfi - free your filecoin assets
 
-An permissionless liquid market for filecoin
+An permissionless liquid market for filecoin.  Collateral nodes and get fils.
 
 ## Background
 
@@ -8,7 +8,7 @@ Building Filecoin nodes requires a large amount of pledging, which has become on
 
 With FVM coming and FIP-0029 already upgrade, technological advances have opened up the collateralized lending market. Now we have the opportunity to use smart contracts and market-based mechanisms to complete the performance process in a secure and trustworthy manner, with all investors who own fils contributing liquidity and all builders who own nodes gaining momentum for continued development
 
-The goal of the *Filfi* project is to create *a permissionless liquidity marketplace* for the Filecoin community.
+The goal of the **Filfi** project is to create **a permissionless liquidity marketplace** for the Filecoin community.
 
 ## Usecase
 

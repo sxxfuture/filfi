@@ -1,4 +1,4 @@
-# Filfil - 押节点，借fil
+# Filfil - 押节点,借Fil
 
 一个自由的Filecoin流动性市场。
 

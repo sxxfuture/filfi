@@ -6,7 +6,7 @@ An permissionless liquid market for filecoin.  Collateral nodes and get fils.
 
 ## Background
 
-Building Filecoin nodes requires a large amount of pledging, which has become one of the bottlenecks for the growth of the Filecoin network, and there is a market demand for fil lending. The built nodes themselves have great value, including pledged fils, future earnings, and linear vesting, making them ideal collateral. This project expects to release the liquidity of the nodes by pledging their crypto assets, adding momentum to the development of the Filecoin network.
+Building Filecoin nodes requires a large amount of pledging, which has become one of the bottlenecks for the growth of the Filecoin network, and there is a market demand for FIL lending. The built nodes themselves have great value, including pledged FIL, future rewards, and linear vesting, making them ideal collateral. This project expects to release the liquidity of the nodes by pledging their crypto assets, adding momentum to the development of the Filecoin network.
 
 With FVM coming and FIP-0029 already upgrade, technological advances have opened up the collateralized lending market. Now we have the opportunity to use smart contracts and market-based mechanisms to complete the performance process in a secure and trustworthy manner, with all investors who own fils contributing liquidity and all builders who own nodes gaining momentum for continued development
 
@@ -14,11 +14,11 @@ The goal of the **Filfi** project is to create **a permissionless liquidity mark
 
 ## Usecase
 
-- Storage providers need a large amount fil for pledging when scaling up, and get the required fil by collateral existing nodes.
+- Storage providers need a large amount FIL for pledging when scaling up, and get the required FIL by collateral existing nodes.
 - A split loan between friends who want to implement a neutral and reliable performance mechanism with the help of smart contracts.
 - Lenders and borrowers do not know each other and want to freely aggregate in a permissionless bilateral marketplace with market-based pricing.
-- Those holding fil want a safe and secure way to invest.
-- Those who hold fil want savings that pay interest.
+- Those holding FIL want a safe and secure way to invest.
+- Those who hold FIL want savings that pay interest.
 
 ## Problem
 
@@ -34,18 +34,18 @@ The goal of the **Filfi** project is to create **a permissionless liquidity mark
 - By creating a collateralized lending marketplace, allowing anyone to join the marketplace without permission and free aggregation
 - Supports both autonomous pricing and market pricing mechanisms to accommodate various lending scenarios.
 - Maximize automated clearing through smart contracts based on the FIP-0044 proposal
-- Enables cross-chain asset lending through cooperation with cross-chain projects in the Fil ecosystem
+- Enables cross-chain asset lending through cooperation with cross-chain projects in the FIL ecosystem
 
 ## Actors
 
 ### Borrower
-- A party that provides fil liquidity, which anyone can join freely without permission.
+- A party that provides FIL liquidity, which anyone can join freely without permission.
 - Receives revenue by lending fil. (Can be extended to support other on-chain assets of Filecoin)
 - Lending can be: 1. directional lending, 2. fixed price lending 3. interest-bearing savings
 - When the lender defaults, the smart contract automatically liquidates the collateral and repays the borrower's assets.
 
 ### Lender
-  - The party borrowing from fil obtains liquid fil by pledging node assets.
+  - The party borrowing from FIL obtains liquid FIL by pledging node assets.
   - Assets that can be pledged by a node include
     - Pledged coins
     - Future earnings (liquid portion and locked portion)
@@ -74,9 +74,9 @@ Change the node beneficiary to the smart contract address generated in the previ
 3. Configure the collateral scheme and determine the final locked assets
 Lock the assets to be collateralized in the DApp. Only locked assets will be involved when liquidation occurs, unlocked assets will always be safe.
 4. Choose to get borrowing from the open market
-View the open market lending price given by DApp, if accepted, fil will be transferred to the specified account immediately.
+View the open market lending price given by DApp, if accepted, FIL will be transferred to the specified account immediately.
 5. Select Directed Borrowing
-Fill in the borrowing price and send the link to the borrower. After the borrower completes the operation, fil will be transferred to the specified account immediately.
+Fill in the borrowing price and send the link to the borrower. After the borrower completes the operation, FIL will be transferred to the specified account immediately.
 6. Repay the debt
 Login to Filfi's DApp using your personal wallet and repay the debt.
 7. Return to File
@@ -88,7 +88,7 @@ Remove the smart contract from the beneficiary and complete the confirmation in 
 1. Browse Debit Contracts
 Login to Filfil's DApp using your personal wallet to view the details of debit and credit contracts issued by the borrower.
 2. Put in fil
-Sign your personal wallet to invest fil into the smart contract.
+Sign your personal wallet to invest FIL into the smart contract.
 3. View assets at any time
 Log in to Filfil's DApp using your personal wallet to view the status of your assets at any time.
 4. When a lender makes a repayment, the assets are automatically transferred to the designated account

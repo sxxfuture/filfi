@@ -69,7 +69,7 @@ The goal of the **Filfi** project is to create **a permissionless liquidity mark
 
 1. **Create an asset package and configure a collateral plan.**
 Login to Filfi's DApp using your personal wallet, create an asset package, and follow the prompts to the next step.
-2. **Return to the Filcoin node to complete the collateral operation.**
+2. **Go back to the Filcoin node to complete the collateral operation.**
 Change the node beneficiary to the smart contract address generated in the previous step, and complete the confirmation in the DApp.
 3. **Configure the collateral scheme and determine the final locked assets.**
 Lock the assets to be collateralized in the DApp. Only locked assets will be involved when liquidation occurs, unlocked assets will always be safe.
@@ -79,8 +79,7 @@ View the open market lending price given by DApp, if accepted, FIL will be trans
 Fill in the borrowing price and send the link to the borrower. After the borrower completes the operation, FIL will be transferred to the specified account immediately.
 6. **Repay the debt.**
 Login to Filfi's DApp using your personal wallet and repay the debt.
-7. **Return to File**
-node to cancel the collateral.
+7. **Go back to Filecoin node to cancel the collateral.**
 Remove the smart contract from the beneficiary and complete the confirmation in the DApp (or the smart contract checks automatically) and the asset will be automatically transferred to the debitor's account.
 
 ### Borrowers 

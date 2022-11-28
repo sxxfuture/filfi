@@ -2,6 +2,8 @@
 
 An permissionless liquid market for filecoin.  Collateral nodes and get fils.
 
+[中文版](README.cn.md)
+
 ## Background
 
 Building Filecoin nodes requires a large amount of pledging, which has become one of the bottlenecks for the growth of the Filecoin network, and there is a market demand for fil lending. The built nodes themselves have great value, including pledged fils, future earnings, and linear vesting, making them ideal collateral. This project expects to release the liquidity of the nodes by pledging their crypto assets, adding momentum to the development of the Filecoin network.

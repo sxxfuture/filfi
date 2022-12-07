@@ -34,7 +34,7 @@ The goal of the Filfi project is to create a permissionless liquidity marketplac
 
 # Solution
 
-- Based on the FIP-0029, FIP-0044 proposal, a trusted fulfillment process is achieved by putting a smart contract in control of the financial part of the node.
+- With FEVM/FVM online,  a trusted fulfillment process is achieved by putting a smart contract in control of the financial part of the node.
 - By creating a collateralized lending market that allows anyone to join the market without permission.
 - Designing different interest rate models for borrowing and lending and calculate at each block time.
 - Distinguish asset types with different asset factors for different asset types to address the different nature of pledged FILs and future rewards.

@@ -143,10 +143,23 @@ Liquidation is based on two principles
 ### Governance Module
 The Governance module contains, tokens and contracts for authorization, voting, proposal execution and voting security.
 
-# Products
+## Products
 
 FilFi.app is a DApp with web interface, user login with their private wallet.
 
+## Other issues
+
+**Is it based on raw or adjusted power?**
+The collateral assets are calculated based on the adjusted power.
+
+**What if I sealed more sectors after collateral a node?**
+Only the locked assets are counted as collateral assets, and this locked ratio can be 0%~100% freely allocated and adjusted at any time. After sealing more sections, the absolute value of locked assets will not change, and the ratio will be adjusted automatically due to the change of denominator. The   new power needs to be readjusted to the locked ratio before it can become a collateral asset. Unlocked assets do not participate in financial calculations, will not enter liquidation and are safe.
+
+**How about Gas fees?**
+Currently it is not possible to pledge worker wallets, so Gas fees are outside of the collateral assets and do not need to participate in the financial calculations. The collateralized party needs to ensure that there is sufficient FIL in the worker's wallet to cover future Gas fees.
+
+**What about penalties by Filecoin network?**
+Poor node maintenance is the cause of netwokr penalties, and the responsibility for node maintenance lies with the borrowers. Penalties due to the borrower's own reasons will be reflected in the change of the value of the asset package, and the continuous decrease of the asset value may trigger the liquidation mechanism. The protocal encourages borrowers to do a good job of node maintenance and prevent liquidation event to occur, so an additional penalty is added for the liquidation event to urge the borrowers to fulfill its responsibilities.
 
 
 

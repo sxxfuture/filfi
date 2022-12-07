@@ -56,6 +56,9 @@ The goal of the Filfi project is to create a permissionless liquidity marketplac
 - Lenders can withdraw their liquidity at any time
 - When a brrowser defaults, the smart contract automatically liquidates the collateral and repays the Lender's assets.
 
+### Smart Contract
+- Smart contracts deployed on FEVM/FVM, implementing the FilFi protocol.
+- FilFi.app is web interface for smart contract.
 
 ### DAO 
 

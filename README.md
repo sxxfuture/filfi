@@ -42,30 +42,38 @@ The goal of the Filfi project is to create a permissionless liquidity marketplac
 
 ## Actors
 
-### Borrower
-- A party that provides FIL liquidity, which anyone can join freely without permission.
-- Receives revenue by lending fil. (Can be extended to support other on-chain assets of Filecoin)
-- Lending can be: 1. directional lending, 2. fixed price lending 3. interest-bearing savings
-- When the lender defaults, the smart contract automatically liquidates the collateral and repays the borrower's assets.
+### Brrower
+- Brrower collateral node assets and brrow FILs.
+- The assets that can be collateraled by a node include
+  - Pledged FILs
+  - Future rewards
+- Brrower can adjust the lock-in ratio of the collateral assets at any time.
+- Borrower can repay the debt at any time.
 
 ### Lender
-  - The party borrowing from FIL obtains liquid FIL by pledging node assets.
-  - Assets that can be pledged by a node include
-    - Pledged coins
-    - Future earnings (liquid portion and locked portion)
-  - Costs to be deducted
-    - Gas fee
+- Lender provide FIL liquidity  and anyone can join freely without permission.
+- Receive interest revenue by lending fil. (scalable to support other on-chain assets on Filecoin)
+- Lenders can withdraw their liquidity at any time
+- When a brrowser defaults, the smart contract automatically liquidates the collateral and repays the Lender's assets.
 
-### Data feed
-
-- Decentralized information input architecture
-- Supports data input from the real world to the blockchain (when supporting cross-chain assets, the market price of the assets needs to be monitored through this system)
 
 ### DAO 
 
 - DAO is made up of individuals and service providers that offer specific services to DAOs through governance tokens and governance processes.
 - Members are independent market participants, not employed.
 - Members are divided into different roles. For example, the Governance Coordinator, who chairs the communication and governance process; and members of the Risk Team, who support Filfi governance through financial risk research and drafting proposals for the introduction of new types of collateral and the management of existing collateral.
+
+## Asset Types
+
+There are tow types of collateralizable assets
+- Pledged FILs in the node
+- Future reward of the node
+
+### Asset Factor
+- Reserve Factor. The protocol keep small part of interest income as a reserve for the protocol. The reserves serves as a layer of protection against risks arising in liquidation.
+- Collateral Factor. The percentage of assets that can generate the amount borrowed, with the over-collateralized portion being used to protect the lenders from being able to safely recover liquidity.
+- Liquidation Factor. Greater than the Collateral Factor, the liquidation is triggered when the value of the assets falls below the value calculated by the liquidation factor.
+- Liquidation Penalty. The protocol discourages the occurrence of liquidation and needs to encourage users to actively maintain the healthy operation of the node instead of sitting around waiting for liquidation to occur, so there needs to be some penalty for liquidation events.
 
 ## Interacting with Filfil
 

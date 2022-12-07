@@ -34,11 +34,11 @@ The goal of the Filfi project is to create a permissionless liquidity marketplac
 
 # Solution
 
-- Based on the FIP-0029 proposal, on-chain collateralization of nodes is achieved by adding smart contracts to node beneficiaries, which is the basis for trusted performance.
-- By creating a collateralized lending marketplace, allowing anyone to join the marketplace without permission and free aggregation
-- Supports both autonomous pricing and market pricing mechanisms to accommodate various lending scenarios.
-- Maximize automated clearing through smart contracts based on the FIP-0044 proposal
-- Enables cross-chain asset lending through cooperation with cross-chain projects in the FIL ecosystem
+- Based on the FIP-0029, FIP-0044 proposal, a trusted fulfillment process is achieved by putting a smart contract in control of the financial part of the node.
+- By creating a collateralized lending market that allows anyone to join the market without permission.
+- Designing different interest rate models for borrowing and lending and calculate at each block time.
+- Distinguish asset types with different asset factors for different asset types to address the different nature of pledged FILs and future rewards.
+- Freely adjust the ratio of locked assets for maximum flexibility.
 
 ## Actors
 

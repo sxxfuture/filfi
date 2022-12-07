@@ -70,6 +70,7 @@ There are tow types of collateralizable assets
 - Future reward of the node
 
 ### Asset Factor
+
 - Reserve Factor. The protocol keep small part of interest income as a reserve for the protocol. The reserves serves as a layer of protection against risks arising in liquidation.
 - Collateral Factor. The percentage of assets that can generate the amount borrowed, with the over-collateralized portion being used to protect the lenders from being able to safely recover liquidity.
 - Liquidation Factor. Greater than the Collateral Factor, the liquidation is triggered when the value of the assets falls below the value calculated by the liquidation factor.
@@ -77,22 +78,25 @@ There are tow types of collateralizable assets
 
 ## Interacting with Filfil
 
-### Lenders
+### Borrower
 
 1. **Create an asset package and configure a collateral plan.**
-Login to Filfi's DApp using your personal wallet, create an asset package, and follow the prompts to the next step.
+Login to Filfi's DApp with your personal wallet and create an asset package.
 2. **Go back to the Filcoin node to complete the collateral operation.**
-Change the node beneficiary to the smart contract address generated in the previous step, and complete the confirmation in the DApp.
-3. **Configure the collateral scheme and determine the final locked assets.**
-Lock the assets to be collateralized in the DApp. Only locked assets will be involved when liquidation occurs, unlocked assets will always be safe.
-4. **If choose to borrowing from the open market.**
-View the open market lending price given by DApp, if accepted, FIL will be transferred to the specified account immediately.
-5. **If choose to borrowing from other peer.**
-Fill in the borrowing price and send the link to the borrower. After the borrower completes the operation, FIL will be transferred to the specified account immediately.
-6. **Repay the debt.**
-Login to Filfi's DApp using your personal wallet and repay the debt.
-7. **Go back to Filecoin node to cancel the collateral.**
-Remove the smart contract from the beneficiary and complete the confirmation in the DApp (or the smart contract checks automatically) and the asset will be automatically transferred to the debitor's account.
+Add the smart contract address to node beneficiary and confirm in the DApp.
+3. **Adjust the locking ratio to etermining the number of collateral assets**
+You can adjust the percentage of collateralized assets locked at any time. Only locked assets will be involved when liquidation occurs, unlocked assets will always be safe.
+4. **Request the number of loans**
+Enter the number of loans needed and FIL is automatically transferred to the wallet of the logged-in DApp. The maximum loan limit is related to the value of locked assets.
+5. **Repay Debt**
+Use your personal wallet to transfer FIL to the smart contract to repay the debt.
+6. **Return to the Filecoin node to cancel the collateral**
+Remove the smart contract from the beneficiary and complete the confirmation in the DApp (or the smart contract automatically checks) and the asset will be automatically free.
+7. **about rewards **
+The uncollateralized portion of reward will be stayed in the contract wallet, and the user can transfer it to his personal wallet at any time.
+
+
+
 
 ### Borrowers 
 

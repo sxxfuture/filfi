@@ -96,8 +96,6 @@ Remove the smart contract from the beneficiary and complete the confirmation in 
 The uncollateralized portion of reward will be stayed in the contract wallet, and the user can transfer it to his personal wallet at any time.
 
 
-
-
 ### Lender 
 
 1. **Deposit FIL**
@@ -106,6 +104,14 @@ Login to Filfil's DApp using your personal wallet and transfer FIL to the smart 
 Lender can withdraw FILs at any time.
 3. **When repayment is done, the origin asset and  interest income is automatically transferred to the designated account
 
+
+## Interest Rate Model
+Interest rates are determined by market supply and demand and are related to the utilization of funds. Different interest rate models are used for lending and borrowing.
+- The smart contract performs accounting calculations at each block time to update the market interest rate.
+- Borrowing rate is a function of the utilization rate of funds.
+- The lending rate is a function of the borrowing rate.
+- The interest rate models all have segmented inflection points to protect the market from a sudden depletion of liquidity.
+- The key coefficients of the interest rate model are determined by the DAO governance process.
 
 ## Smart Contracts Module
 
@@ -135,8 +141,9 @@ Liquidation is based on two principles
 The Governance module contains, tokens and contracts for authorization, voting, proposal execution and voting security.
 
 # Products
-Filfil - An permissionless liquid market for filecoin
-- Web version: HTML5 page version, login via wallet
-- Mobile version: installed on cell phones, not connected to any centralized server
 
-# Roadmap
+FilFi.app is a DApp with web interface, user login with their private wallet.
+
+
+
+

@@ -98,15 +98,13 @@ The uncollateralized portion of reward will be stayed in the contract wallet, an
 
 
 
-### Borrowers 
+### Lender 
 
-1. **Browse Debit Contracts.**
-Login to Filfil's DApp using your personal wallet to view the details of debit and credit contracts issued by the borrower.
-2. **Put in fil.**
-Sign your personal wallet to invest FIL into the smart contract.
-3. **View assets at any time.**
-Log in to Filfil's DApp using your personal wallet to view the status of your assets at any time.
-4. **When a lender makes a repayment, the assets are automatically transferred to the designated account.**
+1. **Deposit FIL**
+Login to Filfil's DApp using your personal wallet and transfer FIL to the smart contract.
+2. **Withdraw FIL**
+Lender can withdraw FILs at any time.
+3. **When repayment is done, the origin asset and  interest income is automatically transferred to the designated account
 
 
 ## Smart Contracts Module
@@ -132,9 +130,6 @@ Liquidation is based on two principles
 - Maximizing coverage of the debt
 - Maximizing the return to the collateral owner
 
-### Messenger Module
-When supporting cross-chain assets, the Filfi protocol requires real-time information about the market price of the assets used as collateral in the asset package. Ultimately, this market price determines the terms of liquidation. The Oracle module handles how the market price is recorded on the blockchain.
-The messenger module is an interface contract where external actors extract the current market price for a given collateral type from the price prognosticator module.
 
 ### Governance Module
 The Governance module contains, tokens and contracts for authorization, voting, proposal execution and voting security.

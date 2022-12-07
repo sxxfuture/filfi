@@ -16,7 +16,7 @@ The goal of the Filfi project is to create a permissionless liquidity marketplac
 
 ## Usecase
 
-- Storage providers need large amounts FIL for pledging when expanding scale, and get the required FILs by collateral existing nodes.
+- Storage providers need large amounts FIL for pledging when expanding scale, the current practice is that lending occurs based on a relationship of trust.
 - People who hold FILs and do not want to sell need a safe and secure way to invest.
 - Everyone want to freely participates in a permissionless bilateral market that prices liquidity in a market-based manner.
 

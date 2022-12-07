@@ -1,32 +1,36 @@
-# Filfi - free your filecoin assets
+# FilFi - free your filecoin assets
 
-An permissionless liquid market for filecoin.  Collateral nodes and get fils.
+An permissionless liquid market for filecoin.  Collateral your nodes and get FILs.
 
-[中文版](README.cn.md)
 
 ## Background
 
-Building Filecoin nodes requires a large amount of pledging, which has become one of the bottlenecks for the growth of the Filecoin network, and there is a market demand for FIL lending. The built nodes themselves have great value, including pledged FIL, future rewards, and linear vesting, making them ideal collateral. This project expects to release the liquidity of the nodes by pledging their crypto assets, adding momentum to the development of the Filecoin network.
+Building Filecoin nodes requires a large amount of pledging, which has become one of the bottlenecks in the growth of the Filecoin network, and the FIL lending market has been created to a certain extent. The built nodes themselves have a lot of value, including pledged FILs, future rewards, and linear vesting, making them ideal collateral. 
 
-With FVM coming and FIP-0029 already upgrade, technological advances have opened up the collateralized lending market. Now we have the opportunity to use smart contracts and market-based mechanisms to complete the performance process in a secure and trustworthy manner, with all investors who own fils contributing liquidity and all builders who own nodes gaining momentum for continued development
+The FilFi protocol expects to release the liquidity of the nodes by collateral their Filecoin assets, lowering the financial barrier for small and medium storage providers to enter this market and adding momentum to the growth of the Filecoin network.
 
-The goal of the **Filfi** project is to create **a permissionless liquidity marketplace** for the Filecoin community.
+With the upcoming launch of the FVM, which opens up the space for a collateralized lending market, we now have the opportunity to use smart contracts and market-based mechanisms to complete the performance process in a secure and trustworthy manner, with investors contributing liquidity and node-owning builders gaining momentum for continued growth.
+
+The goal of the Filfi project is to create a permissionless liquidity marketplace for the Filecoin community, help small and medium-sized storage providers enter the network, and facilitate the expansion and decentralization of power in the Filecoin network.
+
 
 ## Usecase
 
-- Storage providers need a large amount FIL for pledging when scaling up, and get the required FIL by collateral existing nodes.
-- A split loan between friends who want to implement a neutral and reliable performance mechanism with the help of smart contracts.
-- Lenders and borrowers do not know each other and want to freely aggregate in a permissionless bilateral marketplace with market-based pricing.
-- Those holding FIL want a safe and secure way to invest.
-- Those who hold FIL want savings that pay interest.
+- Storage providers need large amounts FIL for pledging when expanding scale, and get the required FILs by collateral existing nodes.
+- People who hold FILs and do not want to sell need a safe and secure way to invest.
+- Everyone want to freely participates in a permissionless bilateral market that prices liquidity in a market-based manner.
+
 
 ## Problem
 
-- The core problem of lending in the real world is performance, and lending based on the trust of acquaintances and personal integrity can become fragile and unstable when risk occurs.
-- Lending sometimes occurs between acquaintances, where prices are set through negotiation, and sometimes between open markets, where prices are set by supply and demand, and both approaches need to be supported. It is also important to distinguish between lending and saving models.
-- The value of the nodes is compounded, including pledged fils, future earnings, linear release of earnings, which part is pledged and how much, all requiring very flexible lending and borrowing options.
-- The liquidation after default requires the cooperation of Owners and how to make the smart contract able to complete the liquidation process independently.
-- The FVM virtual machine will generate more on-chain assets when it goes live, and whether it can support more asset classes beyond fil, or even cross-chain assets (such as USDT).
+- The core problem of existing collateralized lending market is performance. Lending based on the trust of acquaintances and personal integrity can be fragile and unstable when risk occurs.
+- Delivering the owner's private key just for lending is not feasible in practice.
+- Both lenders and borrowers want to have free access to the liquid market.
+- How can liquidity be priced in a market-based manner?
+- The value of the nodes is compounded, including pledged FILs, future reward, linear vesting, which part is pledged and how much？ all requiring very flexible lending options.
+- How to handle future reward as the collateraled nodes continue to reward FILs?
+- How smart contracts liquidate assets independently？
+
 
 # Solution
 
